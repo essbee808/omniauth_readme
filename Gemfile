@@ -1,5 +1,17 @@
 source 'https://rubygems.org'
 
+
+# Use omniauth gem, provider-specific omniauth gem and rails_csrf_protection
+gem 'omniauth'
+
+gem 'omniauth-facebook'
+
+gem 'omniauth-rails_csrf_protection'
+
+# Use dotenv-rails to set environment variabls directly in local ENV hash
+gem 'dotenv-rails'
+
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0'
 # Use sqlite3 as the database for Active Record
@@ -12,6 +24,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+
+
 
 gem 'thin'
 
